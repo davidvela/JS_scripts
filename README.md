@@ -1,0 +1,2 @@
+# JS scripts
+test
