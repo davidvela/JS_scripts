@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Page Title</title>
+    <title>JS Scripts</title>
     <!-- <script src="./scripts/sharepoint.js"></script> -->
-    <script src="./scripts/test.js"></script>
-
+    <!-- <script src="./scripts/test.js"></script> -->
+    <script>
+        var i = 0;
+        function test(){
+            i++;
+            var str_test ="test:" + i ;
+            console.log(str_test );
+            document.getElementById("p1").innerHTML = str_test;
+        }
+    </script>
 </head>
+
 <body>
     <h1>My First Heading</h1>
     <p>My first paragraph.</p>
