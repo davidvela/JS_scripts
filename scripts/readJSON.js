@@ -2,17 +2,21 @@
 const dataPath = '../../../../__data/JSON/'
 const exportPath = '../../../__data/JSON/'
 
-const oJSON = require(dataPath+'sample.json');
+fname = 'sample'
+
+const oJSON = require(dataPath+fname+'.json');
 
 var ls_json = JSON.stringify(oJSON)
 // console.log(oJSON)
+// print JSON file: 
 console.log(ls_json)
 
 const fs = require('fs');
-var json2xls = require('json2xls');
-const filename = exportPath + 'sample2.xlsx';
 
-var convert = function () {
+// convert JSON to excel
+var json2xls = require('json2xls');
+const filename = exportPath + fnanem + '.xlsx';
+var convertJSON2XLSX = function () {
   var xls = json2xls(oJSON);
   fs.writeFileSync(filename, xls, 'binary', (err) => {
      if (err) {
@@ -22,4 +26,6 @@ var convert = function () {
  });
 }
 
-convert();
+
+// main -- call functions: 
+// convertJSON2XLSX();
