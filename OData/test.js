@@ -33,9 +33,9 @@ function Northwind(){
 
 function SAP(){
     const Http = new XMLHttpRequest();
-    const url='https://shhswddf1.global.schindler.com/sap/opu/odata/sap/YAC_HR_CONTR_ADD_SRV/thunderhead_pdfSet';
-    username = 'VELATIDA'; 
-    password = 'Hola226**666'; 
+    const url='https://server.com/sap/opu/odata/sap/<odata_srv>';
+    username = 'test'; 
+    password = 'test*1'; 
     
     // Http.open("GET", url, true, username,password);
     // Http.send();
